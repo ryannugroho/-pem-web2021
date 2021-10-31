@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form HTML</title>
+        <style>
+            select {
+                width: 100%;
+                padding: 16px 20px;
+                border: 1px solid #4CAF50;
+                border-radius: 4px;
+                background-color: #ffffff;
+            }
+            input[type=text] {
+                border: 2px solid #4CAF50;
+                border-radius: 4px;
+            }
+
+            textarea {
+                width: 100%;
+                height: 150px;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: 2px solid #4CAF50;
+                border-radius: 4px;
+                background-color: white;
+                resize: none;
+            }
+            input[type=button], input[type=submit], input[type=reset] {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center" class="heading-style-left-padding">FORMULIR PPDB JALUR ZONASI TAHUN 2021</h1>
+        <hr >
+        <h2>INFO PENDAFTARAN</h2>
+        <form action="proses.php" method="post" name="fcontoh">
+            <table>
+                <tr>
+                    <td><label for="fnim">NISN:</label></td>
+                    <td><input type="number" id="fnisn" name="fnisn"></td> 
+                </tr>
+                <tr>
+                    <td><label for="fasalSekolah">Asal Sekolah:</label></td>
+                    <td><select id="fasalSekolah" name="fasalSekolah">
+                            <option value="">.:Pilih:.</option>
+                            <option value="1">SMAN 1 Semarang</option>
+                            <option value="2">SMAN 2 Semarang</option>
+                            <option value="3">SMAN 3 Semarang</option>
+                            <option value="4">SMAN 4 Semarang</option>
+                            <option value="5">SMAN 5 Semarang</option>
+                            <option value="6">SMAN 6 Semarang</option>
+                            <option value="7">SMAN 7 Semarang</option>
+                            <option value="8">SMAN 8 Semarang</option>
+                            <option value="9">SMAN 9 Semarang</option>
+                            <option value="10">SMAN 10 Semarang</option>
+                            <option value="11">SMAN 11 Semarang</option>
+                            <option value="12">SMAN 12 Semarang</option>
+                            <option value="13">SMAN 13 Semarang</option>
+                            <option value="14">SMAN 14 Semarang</option>
+                            <option value="15">SMAN 15 Semarang</option>
+                        </select>
+                    </td> 
+                </tr>
+                <tr>
+                    <td><label for="ftahunLulus">Tahun Lulus:</label></td>
+                    <td><input type="number" id="ftahunLulus" name="ftahunLulus"></td>
+                </tr>
+            </table><br><br><br>
+         <h2>DATA CALON PESERTA</h2>
+            <table>
+                <tr>
+                    <td><label for="fnamaLengkap">Nama Lengkap:</label></td>
+                    <td><input type="text" id="fnamaLengkap" name="fnamaLengkap"></td> 
+                </tr>
+                <tr>
+                    <td><label for="fnik">NIK:</label></td>
+                    <td><input type="number" id="fnik" name="fnik"></td>
+                </tr>
+                <tr>
+                    <td><label for="ftempatLahir">Tempat Lahir:</label></td>
+                    <td><input type="text" id="ftempatLahir" name="ftempatLahir"></td>
+                </tr>
+                <tr>
+                    <td><label for="ftanggalLahir">Tanggal Lahir:</label></td>
+                    <td><input type="date" id="ftanggalLahir" name="ftanggalLahir"></td>
+                </tr>
+                <tr>
+                    <td><label for="fjenisKelamin">Jenis Kelamin:</label></td>
+                    <td><input type="radio" id="fjenisKelamin" name="fjenisKelamin">Laki-laki</td>
+                    <td><input type="radio" id="fjenisKelamin" name="fjenisKelamin">Perempuan</td>
+                </tr>
+                <tr>
+                    <td><label for="falamat">Alamat:</label></td>
+                    <td><textarea id="falamat" name="falamat" cols="40" rows="3"></textarea>
+                </tr>
+                <tr>
+                    <td><label for="femailAktif">Email Aktif:</label></td>
+                    <td><input type="email" id="femailAktif" name="femailAktif"></td>
+                </tr>
+            </table><br><br><br>
+         <h2>DATA ORANG TUA</h2>
+             <table>
+                <tr>
+                    <td><label for="fnomorKk">Nomor Kartu Keluarga:</label></td>
+                    <td><input type="number" id="fnomorKk" name="fnomorKk"></td> 
+                </tr>
+                <tr>
+                    <td><label for="fnamaAyah">Nama Ayah Kandung:</label></td>
+                    <td><input type="text" id="fnamaAyah" name="fnamaAyah"></td> 
+                </tr>
+                <tr>
+                    <td><label for="fagama">Agama:</label></td>
+                    <td><input type="radio" id="fagama" name="fagama">Islam</td>
+                    <td><input type="radio" id="fagama" name="fagama">Kristen</td>
+                    <td><input type="radio" id="fagama" name="fagama">Katholik</td>
+                    <td><input type="radio" id="fagama" name="fagama">Hindu</td>
+                    <td><input type="radio" id="fagama" name="fagama">Budha</td>
+                </tr>
+                <tr>
+                    <td><label for="fpekerjaan">Pekerjaan:</label></td>
+                    <td><select id="fpekerjaan" name="fpekerjaan">
+                            <option value="">.:Pilih:.</option>
+                            <option value="tidak bekerja">Tidak Bekerja</option>
+                            <option value="pns">PNS</option>
+                            <option value="wirausaha">Wirausaha</option>
+                            <option value="swasta">Swasta</option>
+                            <option value="bumn">BUMN</option>
+                            <option value="tni/polri">TNI/Polri</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="fnamaIbu">Nama Ibu Kandung:</label></td>
+                    <td><input type="text" id="fnamaIbu" name="fnamaIbu"></td> 
+                </tr>
+                <tr>
+                <td><label for="fpekerjaan">Pekerjaan:</label></td>
+                <td><select id="fpekerjaan" name="fpekerjaan">
+                    <option value="">.:Pilih:.</option>
+                    <option value="ibu rumah tangga">Ibu Rumah Tangga</option>
+                    <option value="pns">PNS</option>
+                    <option value="wirausaha">Wirausaha</option>
+                    <option value="swasta">Swasta</option>
+                    <option value="bumn">BUMN</option>
+                    <option value="tni/polri">TNI/Polri</option>
+                    <option value="lainnya">Lainnya</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="falamatOrangtua">Alamat Orang Tua:</label></td>
+                    <td><textarea id="falamatOrangtua" name="falamatOrangtua" cols="40" rows="3"></textarea>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right"><input type="submit" name="fsubmit" value="Kirim"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
