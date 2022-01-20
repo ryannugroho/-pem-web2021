@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Testimoni</title>
+    <link rel="stylesheet" href="asset/css/stylehome.css">
+    <link rel="stylesheet" href="asset/css/styletestimoni.css">
+</head>
+<body>
+    <header> 
+        <nav>
+            <div class="firstdiv">
+                <img class="logo" src="asset/img/kedaiGamestore.png" alt="Softy Pinko"/> 
+                <div class="topnav">
+                    <ul>
+                        <li><a href="Home.html">HOME</a></li>
+                        <li><a href="Testimoni.html">TESTIMONIALS</a></li>
+                        <li><a href="#contact-us">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br><br>
+
+    <div class="contact-form">
+        <form action="asset/php/proses.php" method="post">
+            <div>
+                <div>
+                    <input name="username" type="text" id="name" placeholder="Nama Lengkap" required="">
+                </div>
+
+                <div>
+                    <textarea name="comment" rows="6" id="message" placeholder="Tulis Komentarmu" required=""></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" name="proses" id="form-submit" value="Kirim"/>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="seconddiv">
+            <div class="footer">
+                <div class="subfooter">
+                    <a href="Home.html">
+                        <img class="footerlogo" src="asset/img/kedaiGamestore.png" alt="Softy Pinko"/>
+                    </a>
+                    <p>Penyedia layanan top-up game favorite-mu tanpa ribet, 
+                        nikmati pengalaman top-up mu bersama kami. 
+                        Kami menyediakan jenis pembayaran yang bervariasi.</p>
+                </div>
+                <div class="subfooter">
+                    <section id="contact-us">
+                        <h3>Hubungi Kami</h3>
+                        <div>
+                            <ul>
+                                <li><a href="https://www.instagram.com/xryanayrx/"><img class="instagram" src="asset/img/Instagram.png" alt="Instagram"></a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=6282136496996&text=Halo%20"><img class="contact" src="asset/img/WhatsApp.png" alt="WhatsApp"></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,260 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(#50D5B7, #067D68);
+    background-repeat: no-repeat;
+}
+
+.container{
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(0,0,0,0.3);
+	position: relative; 
+	overflow: hidden; 
+	background: #efefef;
+    margin:20px auto;
+	width: 700px;
+	height: 350px; 
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+    position: absolute; 
+	width:3900px;  
+    /* */
+    animation-name:slider;
+	animation-duration:16s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+	-webkit-animation-name:slider;
+	-webkit-animation-duration:16s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-name:slider;
+	-moz-animation-duration:16s;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count:infinite;
+	-o-animation-name:slider;
+	-o-animation-duration:16s;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count:infinite;
+}
+
+.wrapper img{
+    width: 750px;
+	height: 327px; 
+	float: right;
+}
+
+#menu h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-weight: 500;
+    size: 60px;
+    margin: 25px 0px 20px 0px;
+    color: #ffffff;
+    width: 100%;
+    line-height: 50xp;
+}
+
+li, a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    border-radius: 50px;
+    z-index: 1
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: auto;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: rgb(9, 88, 13);
+}
+  
+.topnav {
+    float: right;
+}
+
+.topnav a{
+    text-align: center;
+    padding: 0px 100px 0px 10px;
+}
+
+/*.active {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(9, 88, 13);
+    font-weight: 500;
+}*/
+
+.logo{
+    width: 200px;
+    padding-top: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.firstdiv {
+    width: 1000px;
+    margin: auto;
+    position: fixed;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+div ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+div ul li {
+    display:inline;
+    float: left;
+    padding:10px
+}
+
+div ul li p {
+    font-family: "Montserrat", sans-serif;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.game {
+    padding: 9px 25px;
+    width: 150px;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+#contact-us h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-weight: 500;
+    size: 60px;
+    margin: 25px 0px 20px 0px;
+    color: #ffffff;
+    width: 100%;
+    line-height: 50xp;
+}
+
+#menu{
+    width: 850px;
+    margin: auto;
+}
+
+#contact-us {
+    padding: 0px 50px 0px 50px;  
+}
+
+.contact {
+    padding: 0px 25px;
+    width: 100px;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.instagram {
+    width: 45px;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+footer {
+    background: rgb(247, 243, 243);
+    padding: 50px 0px 50px 0px;  
+}
+
+.seconddiv {
+    width: 1000px;
+    margin: auto;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footerlogo{
+    width: 400px;
+    cursor: pointer;
+    order: 3;
+    padding-left: 50px;
+}
+
+.subfooter {
+    flex-basis: 45%;
+    margin: 25px;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 650px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #406882;
+    width: 100%;
+    line-height: 50px;
+}
+
+.subfooter p{
+    margin: 25px 0px 10px 0px;
+    font-size: large;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
